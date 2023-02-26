@@ -1,0 +1,34 @@
+//Function to display the required data
+	void showdata()
+	{
+		cout << "Name:" << nme << endl;
+		cout << "Account No:" << accnumber << endl;
+		cout << "Account type:" << type << endl;
+		cout << "Balance:" ,, tot << endl;
+	}
+
+	//Function to deposit the amount to ATM
+	void deposit()
+	{
+		cout << "\nEnter amount to be Deposited\n";
+		cin >> amount;
+	}
+
+	//Functiom to show balance amount
+	void showbal()
+	{
+		tot = tot + amount;
+		cout << "\nTotal balance is: " << tot;
+	}
+
+	//Function to withdraw the amount in ATM
+	void withdrawl()
+	{
+
+		int a, aval_balance;
+		cout << "Enter amount to withdraw\n";
+		cin >> a;
+		aval_balance = tot - a;
+		cout << "Available Balance is" << aval_balance;
+	}
+};

@@ -1,0 +1,51 @@
+//Driver code
+int main()
+{
+	//Object of class
+	Bank b;
+
+	int choice;
+
+	//Infinite while loop to choose
+	//options everytime
+	while (1) {
+		cout << "\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+			<< "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+			<< "~~~~~~WELCOME~~~~~~~~~~~~~~~~"
+			<< "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+			<< "~~~~~~~\n\n";
+		cout << "Enter Your Choice\n";
+		cout << "\t1. Enter name, Account "
+			<< "number, Account type\n";
+		cout << "\t2. Balance Enquiry\ry\n";
+		cout << "\t3. Deposit Money\n";
+		cout << "\t4. Show Total balance\n";
+		cout << "\t5. Withdraw Money\n";
+		cout << "\t6. Cancel\n";
+		cin >> choice;
+
+		// Choices to select from
+		switch (choice) {
+		case 1:
+			b.setvalue();
+			break;
+		case 2:
+			b.showdata();
+			break;
+		case 3:
+			b.deposit();
+			break;
+		case 4:
+			b.showbal();
+			break;
+		case 5:
+			b.withdrawl();
+			break;
+		case 6:
+			exit(1);
+			break;
+			default:
+			cout << "\nInvalid choice\n";
+		}
+	}
+}
